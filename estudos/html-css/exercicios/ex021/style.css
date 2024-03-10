@@ -12,29 +12,61 @@ header {
     text-align: center;
     padding: 10px;
     margin: 10px;
+    border-radius: 10px;
+
 }
+
+    /* div#bola {
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+        background-color: white;
+        border-radius: 50%;
+        
+    } */
 
 header > h1 {
     padding-top: -10px;
 }
 
-header > img {
-    padding-bottom: 20px;
+img#foto {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
 }
 
 nav {
     background-color: rgb(53, 171, 245);
     text-align: center;
-    padding: 10px;
     margin: 10px;
-    
+    border-radius: 10px;
 }
 nav > p {
     font-weight: bold;
 }
 
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.position {
+    background-color: aqua;
+    margin: 10px;
+    padding: 28px;
+    border-radius: 10px;
+}
+
 .imagem {
-    padding-right: 10px;
+    padding-right: 15px;
+    border-radius: 25%;
+}
+
+section#noticias {
+    background-color: azure;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
 }
 
 footer {
@@ -42,6 +74,8 @@ footer {
     text-align: center;
     margin: 10px;
     padding: 5px;
+    border-radius: 10px;
+    border-style: ridge;
 }
 
 footer > p {
