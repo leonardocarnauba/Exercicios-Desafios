@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: blue;
+    margin: 0px;
+}
+
+header {
+    background-color: rgb(132, 126, 246);
+    color: azure;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+header > h1 {
+    padding-top: -10px;
+}
+
+header > img {
+    padding-bottom: 20px;
+}
+
+nav {
+    background-color: rgb(53, 171, 245);
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    
+}
+nav > p {
+    font-weight: bold;
+}
+
+.imagem {
+    padding-right: 10px;
+}
+
+footer {
+    background-color: aquamarine;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+footer > p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    font-weight: bold;
+    margin: 0px;
+}
