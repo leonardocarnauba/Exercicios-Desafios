@@ -29,44 +29,86 @@ body {
     background-color: var(--cor0);
     font-family: var(--fonte-padrao);
     margin: 0px;
+}
 
+a.external::after {
+    content: '\00A0\1F517';
 }
 
 header {
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2), var(--cor3), var(--cor4));
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4), var(--cor5));
+    min-height: 150px;
+    padding-top: 40px;
+    text-align: center;
 }
 
 header > h1 {
     color: white;
-    font-family: var(--fonte-destaque)
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.432);
+    
 }
 
 header > p {
     color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    margin: auto;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.308);
+    
+   
 }
 
 nav {
-    background-color: var(--cor5);
-    color: var(--cor0);
+    background-color: var(--cor1);
+    padding: 10px;
+    font-family: var(--fonte-padrao);
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.354);
+
+
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+nav a:hover{
+    background-color: var(--cor0);
+    color: var(--cor4);
+   
 }
 
 main {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
     min-width: 280px;
     max-width: 800px;
     margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;   
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.527);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     
 }
 
 main img {
     width: 100%;
+    border-radius: 8px;
 }
 
 main img.pequena {
-    width: 50%;
+    max-width: 350px;
     /* Imagem por padrao nao é um bloco, por isso do display: block; para ela centralizar com o margin: auto; */
     display: block;
     margin: auto;
@@ -84,15 +126,92 @@ main h1 {
 }
 
 main h2 {
-    color: var(--cor5);
+    color: var(--cor4);
     font-family: var(--fonte-android);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    padding-top: 1px;
+    /* text-indent espaçamento inicial na linha horizontal */
+    text-indent: 8px;
+    border-radius: 2px;
+}
+
+/* nao coloca main > p pois dessa forma se existir outro p dentro de qualquer tag dentro do main ele ira realizar a alteração/ o sinal de > é pra quando for o filho dentro da tag */
+main p {
+    margin: 15px 0px;
+    /* alinhamento dos parágrafos dentro do main */
+    text-align: justify;
+    /* recuo no começo de todo parágrafo */
+    text-indent: 30px;
+    /* altura entre as linhas */
+    line-height: 2em;
+    font-size: 1em;
+}
+
+main strong {
+    color: var(--cor3);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor0);
+    padding: 2px 4px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+aside {
+    background-color: var(--cor0);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+}
+
+aside > h3 {
+    background-color: var(--cor3);
+    color: white;
+    padding: 10px;
+    /* margin negativa para crescer pra fora e juntar o bloco */
+    margin: -10px -10px 0px -10px;    
+    border-radius: 10px 10px 0px 0px;
+    font-family: var(--fonte-padrao);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.263);
+}
+
+aside > ul {
+    /* Tipo do estilo da lista \código (\00A0 = espaço) */
+    list-style-type: '\2705\00A0';
+    /* coloca a lista dentro do background de aside */
+    list-style-position: inside;
+    columns: 2;
+
 }
 
 footer {
     background-color: var(--cor5);
     color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
 }
 
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
+}
 
 
 
