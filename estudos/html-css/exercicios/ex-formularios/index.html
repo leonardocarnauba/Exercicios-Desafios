@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulários</h1>
+    <!-- <h2>Área de cadastro</h2>
+    <form action="longin.html" method="get">
+        <input type="text" name="usuario" value="">
+        <input type="password" name="senha" value="">
+        <input type="submit" value="Fazer Cadastro">
+    </form>
+
+    <h2>Área de login</h2>
+    <form action="longin.html" method="post">
+        <input type="text" name="usuario" value="123">
+        <input type="password" name="senha" value="">
+        <input type="submit" value="Criar Cadastro">
+    </form>
+
+    <h2>Área de seleção</h2>
+    <form action="longin.html" method="post"> -->
+        <!--Selecionar mais de uma opcao colocar dentro da tag size"" e multiple  -->
+        <!-- <select name="ordenacao" size="2" multiple>
+            <option></option>
+            <option value="Last">Recentes</option>
+            <option value="Bestesellers" selected>Mais Vendidos</option>
+            <input type="submit" value="Enviar">
+        </select>
+    </form>
+
+    <h2>Área de texto</h2>
+    <form action="longin.html" method="get">
+        <textarea name="descricao" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h2>Botão</h2>
+    <form action="longin.html" method="get">
+        <input type="text" name="texto" value=""> -->
+        <!-- button pode usar fora do form -->
+        <!-- <button>Envie o Texto</button>
+    </form>
+
+    <h2>Label</h2> -->
+    <form action="longin.html" method="get">
+        <!-- label especifica qual a informação do input -->
+        <!-- com o label pode selecionar o campo clicando direto no nome -->
+        <!-- o for do label coloco o valor o id do input -->
+        <!-- <label for="nome">Digite o nome de usuário:</label><br>
+        <input type="text" name="usuario" id="nome">
+        <button>Enviar</button>
+
+        <br><br>
+        
+        <input type="checkbox" id="teste">
+        <label for="teste">Eu declaro que li e aceito os termos de uso</label><br>
+        <button>Enviar</button>
+
+        <br><br><br> -->
+        <!-- Outra forma de usar o label -->
+
+        <!-- <label>
+            Nome completo: <br>
+            <input type="text" name="nome">
+            <input type="submit" value="Enviar o nome">
+        </label>
+
+        <br><br><br> -->
+        <label >
+            Nome Completo: <br>
+            <input type="text" name="nome">
+        </label>
+
+        <label>
+            Descrição: <br>
+            <textarea name="descricao"></textarea>
+        </label>
+
+        <label >
+            Categoria: <br>
+            <select name="Categoria">
+                <option value="1">Categoria 1</option>
+                <option value="2">Categoria 2</option>
+                <option value="3">Categoria 3</option>
+                <option value="4">Categoria 4</option>
+                <option value="5">Categoria 5</option>
+            </select>
+        </label>
+
+        <label>
+            <input type="checkbox">
+            Eu declaro que li e aceito os <a href="pagina/termo.html" target="_blank" class="termoslink">termos de uso.</a>
+        </label>
+
+        <button>Fazer cadastro</button>
+
+    </form>
+
+</body>
+</html>

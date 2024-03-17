@@ -1,0 +1,30 @@
+body {
+    margin: 0px;
+    background-color: blue;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-family: "Madimi One", sans-serif;
+}
+
+table {
+    background-color: white;
+    color: black;
+    width: 600px;  
+}
+
+table thead {
+    background-color: rgb(245, 245, 110);
+
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+tbody td:hover {
+    background-color: rgb(232, 229, 229);
+}
