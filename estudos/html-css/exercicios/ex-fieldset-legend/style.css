@@ -1,0 +1,21 @@
+* {
+    box-sizing: content-box;
+   
+}
+
+body {
+    margin: 20px;
+}
+
+fieldset {
+    background-color: #EEE;
+    margin-bottom: 20px;
+    border: 2px solid blue;
+    
+}
+
+legend {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+}
